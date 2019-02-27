@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee url('bg.png') 0 0 no-repeat;
+    background-size: auto;
+    background-clip: border-box;
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-wrapper {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-wrapper .inner {
+    background-color: rgba(230, 230, 230, 0.8);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login-wrapper .inner h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.login-wrapper .inner .field {
+    margin-bottom: 10px;
+}
+
+.login-wrapper .inner .field label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-wrapper .inner .field input[type="text"],
+.login-wrapper .inner .field input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 1px 1px 3px rgba(105, 105, 105, 0.1);
+    outline: none !important;
+}
+
+.login-wrapper .inner .form {
+    margin-bottom: 15px;
+}
+
+.login-wrapper .inner .additional::after {
+    content: '';
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+
+.login-wrapper .inner .additional .field.forgetpassword a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.login-wrapper .inner .additional .field.forgetpassword a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.login-wrapper .inner .additional .field.remember {
+    float: left;
+    width: 50%;
+}
+
+.login-wrapper .inner .additional .field.remember label {
+    display: inline-block;
+}
+
+.login-wrapper .inner .buttons button {
+    border: 0 none;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0,0,0,0.20);
+}
